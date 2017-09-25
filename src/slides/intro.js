@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide, List, Image } from 'spectacle';
 
-import { Text, ListItem, Heading, CodePane } from 'components';
+import { Text, ListItem, Heading, CodePane, TwoColumn } from 'components';
 import img from 'img';
 
 export default [
@@ -43,5 +43,32 @@ export default [
   <Slide>
     <Heading size={5}>How Do Templates Make It to the Browser?</Heading>
     <CodePane textSize="1.5rem" src="angular-templates" lang="js" />
+  </Slide>,
+  <Slide>
+    <Heading size={5}>Task Runners</Heading>
+    <TwoColumn>
+      <Image
+        src={img.gulp}
+        margin="2rem 0"
+        className="bg-white w4 h4 br-100 bw2 ba b--white"
+      />
+      <List>
+        <ListItem>Automate tasks in your development workflow.</ListItem>
+        <ListItem>Can do pretty much anything!</ListItem>
+        <ListItem>Write or configure tasks.</ListItem>
+      </List>
+    </TwoColumn>
+  </Slide>,
+  <Slide>
+    <Heading size={5}>Task Runners</Heading>
+    <List>
+      <ListItem>where will the JS output</ListItem>
+      <ListItem>
+        where will the templates end up. What will they end up as.
+      </ListItem>
+      <ListItem>where will css go</ListItem>
+      <ListItem>images 🤷🏽‍♂️</ListItem>
+      <ListItem>relative links in my template</ListItem>
+    </List>
   </Slide>,
 ];
