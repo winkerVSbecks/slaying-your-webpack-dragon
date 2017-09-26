@@ -14,7 +14,9 @@ export default [
   <Slide>
     <div className="tl">
       <Image src={img.me} margin="0 0 4rem 0" className="w4 h4 br-100" />
-      <Text textSize="3rem">Varun Vachhar</Text>
+      <Text textSize="3rem" className="fw9">
+        Varun Vachhar
+      </Text>
       <Text textSize="2.25rem">Technical Director at Rangle.io</Text>
       <Text textSize="2.25rem">@winkerVSbecks</Text>
     </div>
@@ -60,15 +62,19 @@ export default [
     </TwoColumn>
   </Slide>,
   <Slide>
-    <Heading size={5}>Task Runners</Heading>
+    <Heading size={5}>Task Runners as Build Tools 🖼️</Heading>
     <List>
-      <ListItem>where will the JS output</ListItem>
+      <ListItem>Have to instruct it on how to build your app</ListItem>
       <ListItem>
-        where will the templates end up. What will they end up as.
+        Have to connect the location of the generated JS & HTML to other static
+        assets
       </ListItem>
+      {/* <ListItem>Have to define the tasks</ListItem>
+      <ListItem>Where do templates end up. What will they end up as.</ListItem>
       <ListItem>where will css go</ListItem>
       <ListItem>images 🤷🏽‍♂️</ListItem>
-      <ListItem>relative links in my template</ListItem>
+      <ListItem>relative links in my template</ListItem> */}
+      {/*  for example if you are writing a react component and that component uses an image. What will be the url of that image? 🤷🏽‍♂️*/}
     </List>
   </Slide>,
 ];

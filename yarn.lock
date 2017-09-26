@@ -5746,6 +5746,15 @@ react-dev-utils@^4.0.0:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
+react-dom@^15.4.1:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
+
 react-error-overlay@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-2.0.1.tgz#622e3cc85cdfb4bcfc8e93f47ddcddd38e1e176e"
@@ -5787,6 +5796,16 @@ react-typography@^0.15.10:
 "react@^15 || ^16", react@^15.4.2, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
+  dependencies:
+    create-react-class "^15.6.0"
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
+
+react@^15.4.1:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
   dependencies:
     create-react-class "^15.6.0"
     fbjs "^0.8.9"
@@ -6435,6 +6454,14 @@ spectacle-code-slide@^0.4.0:
     lodash.clamp "^4.0.1"
     lodash.memoize "^4.0.1"
     lodash.padstart "^4.2.0"
+
+spectacle-terminal@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/spectacle-terminal/-/spectacle-terminal-0.3.0.tgz#74396bd6c8e6c6481ec16735f911625ee76f5356"
+  dependencies:
+    classnames "^2.2.5"
+    react "^15.4.1"
+    react-dom "^15.4.1"
 
 spectacle@2.2.0:
   version "2.2.0"

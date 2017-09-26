@@ -7,7 +7,7 @@ export const Heading = props => (
     lineHeight={1.25}
     textColor="secondary"
     textAlign="left"
-    margin="0 0 1rem 0"
+    margin="0 0 2rem 0"
     {...props}
   />
 );
