@@ -170,13 +170,6 @@ $ webpack  ./js/index.js ./dist --config webpack.config.js
 
 <!-- use terminal component to demo webpack --config -->
 
-```js
-"scripts": {
-  "start": "NODE_ENV=development webpack-dev-server",
-  "build": "NODE_ENV=production webpack",
-},
-```
-
 ---
 
 ## Core Concepts
@@ -219,6 +212,15 @@ module.exports = {
 
 ---
 
+```js
+"scripts": {
+  "start": "NODE_ENV=development webpack-dev-server",
+  "build": "NODE_ENV=production webpack",
+},
+```
+
+---
+
 ## 👨🏽‍💻 build a simple app here – with one or two modules
 
 ---
@@ -228,12 +230,6 @@ module.exports = {
 ---
 
 ### What is a webpack Module/Everything is a module!
-
-<!--
-  show in a tabbed interface that looks like a text editor
-  + A CommonJS require() statement
-  + An AMD define and require statement
--->
 
 + webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module
 + An ES2015 import statement

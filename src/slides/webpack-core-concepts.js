@@ -25,6 +25,18 @@ export default [
   <Slide>
     <Text>🖼️ webpack tree path animation to bundle</Text>
   </Slide>,
+  <Slide>
+    <div className="flex items-stretch">
+      <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
+        <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/index.js</div>
+        <CodePane className="h-100" src="hw-index" lang="js" />
+      </div>
+      <div className="flex-auto ba b--moon-gray overflow-hidden bw1">
+        <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/math.js</div>
+        <CodePane className="h-100" src="hw-math" lang="js" />
+      </div>
+    </div>
+  </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>Hello Webpack</Heading>
     <WebpackBasicBuild />
