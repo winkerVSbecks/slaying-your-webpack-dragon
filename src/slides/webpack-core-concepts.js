@@ -26,7 +26,11 @@ export default [
     <Text>🖼️ webpack tree path animation to bundle</Text>
   </Slide>,
   <Slide textColor="primary">
-    <Heading size={4}>Webpack Usage</Heading>
+    <Heading size={4}>Hello Webpack</Heading>
     <WebpackBasicBuild />
+  </Slide>,
+  <Slide textColor="primary">
+    <Heading size={4}>webpack.config.js</Heading>
+    <CodePane textSize="2.25rem" src="webpack-concepts" lang="js" />
   </Slide>,
 ];

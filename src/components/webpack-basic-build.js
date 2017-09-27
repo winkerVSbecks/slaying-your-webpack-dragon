@@ -1,6 +1,6 @@
 import React from 'react';
 import Terminal from 'spectacle-terminal';
-import { Command } from './command';
+import { Command, B, G } from './command';
 
 export const WebpackBasicBuild = () => (
   <Terminal
@@ -8,18 +8,46 @@ export const WebpackBasicBuild = () => (
     output={[
       <Command>npm install webpack</Command>,
       <Command>./node_modules/.bin/webpack --config webpack.config.js</Command>,
-      <div>
+      <div className="fw3 lh-copy">
+        <div className="h2" />
+        <div>
+          Hash: <B>fd81c516a582b78532ec</B>
+        </div>
+        <div>
+          Version: webpack <B>3.5.1</B>
+        </div>
+        <div>
+          Time: <B>70</B>ms
+        </div>
         <div className="h1" />
-        <div>Hash: ff6c1d39b26f89b3b7bb</div>
-        <div>Version: webpack 2.2.0</div>
-        <div>Time: 390ms</div>
-        <pre>{`Asset    Size  Chunks                    Chunk Names`}</pre>
-        <pre>{`bundle.js  544 kB       0  [emitted]  [big]  main
- [0] ./~/lodash/lodash.js 540 kB {0} [built]
- [1] (webpack)/buildin/global.js 509 bytes {0} [built]
- [2] (webpack)/buildin/module.js 517 bytes {0} [built]
- [3] ./src/index.js 278 bytes {0} [built]`}</pre>
+        <div className="fw8">
+          {'    '}Asset{'     '}Size{'  '}Chunks{'             '}Chunk Names
+        </div>
+        <div>
+          <G>bundle.js</G>
+          {'  '}3.44 kB{'       '}0{'  '}
+          <G>[emitted]</G> main
+        </div>
+        <div>
+          {'   '}[0] <B>./src/index.js</B> 412 bytes {0} <G>[built]</G>
+        </div>
+        <div>
+          {'   '}[1] <B>./src/math.js</B> 129 bytes {0} <G>[built]</G>
+        </div>
       </div>,
+      <Command className="mt4">cat webpack.config.js</Command>,
+      <pre>{`const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+  },
+};
+
+
+`}</pre>,
     ]}
   />
 );

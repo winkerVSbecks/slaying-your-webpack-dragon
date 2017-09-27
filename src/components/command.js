@@ -1,10 +1,14 @@
 import React from 'react';
 
 export const Command = ({ children, ...props }) => (
-  <span>
-    <span style={{ color: '#ff5c57' }} {...props}>
-      ❯{' '}
-    </span>
+  <div {...props}>
+    <span style={{ color: '#ff5c57' }}>❯ </span>
     {children}
-  </span>
+  </div>
 );
+
+export const G = props => (
+  <span style={{ color: '#00E676' }} className="fw8" {...props} />
+);
+
+export const B = props => <span className="fw8" {...props} />;
