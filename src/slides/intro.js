@@ -22,8 +22,8 @@ export default [
     </div>
   </Slide>,
   <Slide>
-    <Heading size={4}>2012</Heading>
-    <Text>Started building web apps for the first time</Text>
+    <Heading size={4}>2013</Heading>
+    <Text>Started building Single-Page Applications</Text>
   </Slide>,
   <Slide>
     <Heading size={5}>JavaScript</Heading>

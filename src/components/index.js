@@ -5,3 +5,5 @@ export * from './codepane';
 export * from './two-col';
 export * from './command';
 export * from './webpack-basic-build';
+export * from './code';
+export * from './triangle';

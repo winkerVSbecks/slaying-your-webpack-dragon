@@ -7,7 +7,7 @@ export const WebpackBasicBuild = () => (
     title="triangle-catalogue-webpack-example"
     output={[
       <Command>npm install webpack</Command>,
-      <Command>./node_modules/.bin/webpack --config webpack.config.js</Command>,
+      <Command>node_modules/.bin/webpack --config webpack.config.js</Command>,
       <div className="fw3 lh-copy">
         <div className="h2" />
         <div>
@@ -42,7 +42,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public'),
   },
 };
 
