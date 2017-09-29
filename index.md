@@ -301,7 +301,7 @@ module.exports = {
 ## deeper dive into loaders
 
 + babel-loader
-+ url-loader
++ file-loader
   + Handling static assets
 + ['style-loader', 'css-loader', postcss-loader]
   + Static assets in CSS

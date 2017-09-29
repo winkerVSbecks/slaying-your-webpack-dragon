@@ -122,16 +122,16 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/loaders.example')}
     ranges={[
-      { loc: [8, 22] },
-      { loc: [10, 11], note: 'Compile JS/JSX using Babel' },
+      { loc: [8, 24] },
+      { loc: [10, 15], note: 'Compile JS/JSX using Babel' },
       {
-        loc: [11, 12],
+        loc: [15, 16],
         title: 'Chain Loaders!',
         note: '.css file ➡️ resolve @import and url() ➡️ <style>',
       },
-      { loc: [12, 20], note: 'Load images' },
+      { loc: [16, 23], note: 'Load images' },
       {
-        loc: [15, 19],
+        loc: [19, 22],
         note: (
           <p>
             <Code>triangle-pattern.svg</Code> turns into{' '}
@@ -141,6 +141,43 @@ export default [
           </p>
         ),
       },
+    ]}
+  />,
+  <Slide>
+    <Text>demonstrate build output 🎫</Text>
+  </Slide>,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.8em"
+    style={{ lineHeight: 1.25 }}
+    code={require('../assets/css-pipeline.example')}
+    ranges={[
+      { loc: [15, 39] },
+      { loc: [18, 20] },
+      {
+        loc: [20, 36],
+        note: 'CSS Preprocessors! sass-loader, less-loader, etc.',
+      },
+      { loc: [22, 36] },
+    ]}
+  />,
+  <Slide margin="0">
+    <Heading size={4}>Plugins 🔌</Heading>
+    <Text>
+      They customize or enhance the webpack build process in a variety of ways.
+    </Text>
+  </Slide>,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.8em"
+    style={{ lineHeight: 1.25 }}
+    code={require('../assets/html-plugin.example')}
+    ranges={[
+      { loc: [6, 10], title: 'Dynamic Filename' },
+      { loc: [2, 3], title: 'HTML Webpack Plugin' },
+      { loc: [50, 56], note: 'Enable HtmlWebpackPlugin' },
     ]}
   />,
 ];
