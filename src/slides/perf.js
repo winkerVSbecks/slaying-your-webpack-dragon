@@ -62,7 +62,7 @@ export default [
     code={require('../assets/extract-text.example')}
     ranges={[
       { loc: [3, 4], title: 'Extract Text Plugin' },
-      { loc: [19, 40] },
+      { loc: [19, 40], note: 'extract CSS into a .css file' },
       { loc: [23, 38] },
       { loc: [54, 57] },
     ]}
@@ -93,9 +93,6 @@ export default [
     ]}
   />,
   <Slide>
-    <Image src={img.codeSplitting} className="w-100" />
-  </Slide>,
-  <Slide>
     <Heading size={5}>Async Components in Vue</Heading>
     <TwoColumn>
       <CodePane textSize="1.5rem" src="vue-async-component" lang="js" />
@@ -119,6 +116,52 @@ export default [
       { loc: [9, 13] },
       { loc: [14, 18] },
       { loc: [22, 26] },
+    ]}
+  />,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.65em"
+    style={{ lineHeight: 1.25 }}
+    code={require('../assets/async-triangles.example')}
+    ranges={[
+      { loc: [0, 0], title: 'Async Triangle Slides' },
+      { loc: [0, 25], note: 'triangles/index.js - Static Imports' },
+      { loc: [25, 40], note: 'triangles/index.js - Dynamic Imports ✂️' },
+      { loc: [44, 56], title: 'webpack.config.js' },
+      { loc: [49, 50], title: 'webpack.config.js' },
+    ]}
+  />,
+  <Slide>
+    <Image src={img.codeSplitting} className="w-100" />
+  </Slide>,
+  <Slide>
+    <Heading size={3} textAlign="center">
+      Bundle Buddy
+    </Heading>
+    <CodePane textSize="1.5rem" src="bundle-buddy" lang="shell" />
+  </Slide>,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.8em"
+    style={{ lineHeight: 1.25 }}
+    code={require('../assets/common-chunk.example')}
+    ranges={[
+      { loc: [0, 0], title: 'Prevent Code Duplication' },
+      { loc: [64, 69], note: 'Extract all duplicated code into a chunk' },
+    ]}
+  />,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.8em"
+    style={{ lineHeight: 1.25 }}
+    code={require('../assets/prod-ready.example')}
+    ranges={[
+      { loc: [0, 0], title: 'Getting Ready for Production' },
+      { loc: [69, 72], title: 'Enable Production Mode' },
+      { loc: [72, 73], title: 'Minify & Compress' },
     ]}
   />,
 ];

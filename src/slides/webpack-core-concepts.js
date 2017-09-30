@@ -161,6 +161,9 @@ export default [
       { loc: [22, 36] },
     ]}
   />,
+  <Slide>
+    <Image src={img.vueLoader} className="w-60" />
+  </Slide>,
   <Slide margin="0">
     <Heading size={4}>Plugins 🔌</Heading>
     <Text>
@@ -184,7 +187,4 @@ export default [
       { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,
-  <Slide>
-    <Image src={img.vueLoader} className="w-60" />
-  </Slide>,
 ];
