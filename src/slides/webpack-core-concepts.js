@@ -7,7 +7,6 @@ import {
   ListItem,
   Heading,
   CodePane,
-  TwoColumn,
   WebpackBasicBuild,
   Triangle,
   Code,
@@ -175,9 +174,17 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/html-plugin.example')}
     ranges={[
-      { loc: [6, 10], title: 'Dynamic Filename' },
+      { loc: [7, 11], title: 'Dynamic Filename' },
       { loc: [2, 3], title: 'HTML Webpack Plugin' },
-      { loc: [50, 56], note: 'Enable HtmlWebpackPlugin' },
+      { loc: [51, 57], note: '✨ automatically inject scripts into template' },
+      { loc: [5, 6], note: '🐛 debugging' },
+      { loc: [6, 7], note: '📄 Entry' },
+      { loc: [7, 11], note: '📦 Output' },
+      { loc: [11, 30], note: '🖨️ Loaders' },
+      { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,
+  <Slide>
+    <Image src={img.vueLoader} className="w-60" />
+  </Slide>,
 ];

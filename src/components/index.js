@@ -7,3 +7,4 @@ export * from './command';
 export * from './webpack-basic-build';
 export * from './code';
 export * from './triangle';
+export * from './code-splitting';

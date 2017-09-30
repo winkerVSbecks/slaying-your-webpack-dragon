@@ -7,4 +7,5 @@ export default {
   grunt: require('./grunt-logo.svg'),
   gulp: require('./gulp.svg'),
   me: require('./me.png'),
+  vueLoader: require('./vue-loader.png'),
 };

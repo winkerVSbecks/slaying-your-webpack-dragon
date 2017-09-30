@@ -1,0 +1,5 @@
+scripts: {
+  ...
+  preanalyze: "webpack --profile --json > stats.json",
+  analyze: "webpack-bundle-analyzer stats.json"
+}
