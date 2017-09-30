@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, List, Link, Image } from 'spectacle';
+import { Slide, List, Image } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
 import {
@@ -9,6 +9,7 @@ import {
   CodePane,
   CodeSplitting,
   TwoColumn,
+  BuildComparision,
 } from 'components';
 import img from 'img';
 
@@ -164,4 +165,7 @@ export default [
       { loc: [72, 73], title: 'Minify & Compress' },
     ]}
   />,
+  <Slide>
+    <BuildComparision />
+  </Slide>,
 ];

@@ -8,3 +8,4 @@ export * from './webpack-basic-build';
 export * from './code';
 export * from './triangle';
 export * from './code-splitting';
+export * from './build-comparision';
