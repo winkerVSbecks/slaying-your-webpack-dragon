@@ -1,8 +1,15 @@
 import React from 'react';
-import { Slide, List, Link } from 'spectacle';
+import { Slide, List, Link, Image } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
-import { Text, ListItem, Heading, CodePane, CodeSplitting } from 'components';
+import {
+  Text,
+  ListItem,
+  Heading,
+  CodePane,
+  CodeSplitting,
+  TwoColumn,
+} from 'components';
 import img from 'img';
 
 export default [
@@ -83,6 +90,35 @@ export default [
       },
       { loc: [8, 14] },
       { loc: [17, 18], note: 'name the split chunk' },
+    ]}
+  />,
+  <Slide>
+    <Image src={img.codeSplitting} className="w-100" />
+  </Slide>,
+  <Slide>
+    <Heading size={5}>Async Components in Vue</Heading>
+    <TwoColumn>
+      <CodePane textSize="1.5rem" src="vue-async-component" lang="js" />
+      <CodePane
+        textSize="1.5rem"
+        src="vue-async-component-usage"
+        lang="html"
+        className="h-100"
+      />
+    </TwoColumn>
+  </Slide>,
+  <CodeSlide
+    transition={[]}
+    lang="js"
+    textSize="0.8em"
+    code={require('../assets/async-component-react.example')}
+    ranges={[
+      { loc: [0, 0], title: 'Async Components in React' },
+      { loc: [0, 22] },
+      { loc: [3, 19] },
+      { loc: [9, 13] },
+      { loc: [14, 18] },
+      { loc: [22, 26] },
     ]}
   />,
 ];

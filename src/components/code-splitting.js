@@ -10,10 +10,7 @@ export const CodeSplitting = props => (
         CSS
       </div>
       <div style={{ backgroundColor: '#FFEB3B' }} className="pv1 ml6 mb2 w-60">
-        JS main chunk
-      </div>
-      <div style={{ backgroundColor: '#FFEB3B' }} className="pv1 ml6 w-70">
-        slide-1 chunk
+        main JS chunk
       </div>
     </div>
     <div className="w-50 pb4 flex flex-column">
@@ -22,10 +19,10 @@ export const CodeSplitting = props => (
       </div>
       <div className="flex">
         <div style={{ backgroundColor: '#FFEB3B' }} className="ml5 ph3 pv1">
-          slide #2
+          slide #1
         </div>
         <div style={{ backgroundColor: '#FFEB3B' }} className="ml3 ph3 pv1">
-          slide #3
+          slide #2
         </div>
       </div>
     </div>

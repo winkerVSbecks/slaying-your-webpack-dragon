@@ -24,36 +24,6 @@
 
 ---
 
-<!-- codeslide this -->
-
-```js
-// Require sync
-import './Equilateral';
-// as method to load ES2015 modules dynamically on runtime.
-// Dynamically load modules. Calls to import() are treated as split points,
-// meaning the requested module and it's children are split out into a separate chunk.
-import('./Equilateral');
-// Returns a promise
-import(/* webpackChunkName: "equilateral" */ './Equilateral');
-```
-
----
-
-```js
-Vue.component(
-  'async-home',
-  () => import('./home-component')
-)
-```
-
-```html
-<div v-if="showHome">
-  <async-home></async-home>
-</div>
-```
-
----
-
 ## Code Splitting
 
 <!--https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html-->

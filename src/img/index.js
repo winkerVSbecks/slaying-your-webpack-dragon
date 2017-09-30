@@ -1,7 +1,7 @@
 export default {
   babelFish: require('./babel-fish-o.gif'),
   bundle: require('./bundle.gif'),
-  codeSplitting: require('./code-splitting.png'),
+  codeSplitting: require('./code-splitting.gif'),
   m6: require('./m-6.gif'),
   tumblr: require('./tumblr_n9raos3MIf1shl3p1o1_1280.gif'),
   grunt: require('./grunt-logo.svg'),
