@@ -26,7 +26,7 @@ export default [
     </List>
   </Slide>,
   <Slide margin="0">
-    <Heading size={5} margin="0 0 4rem 0">
+    <Heading size={4} margin="0 0 4rem 0">
       Overcoming Webpack Fatigue
     </Heading>
     <List>

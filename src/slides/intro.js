@@ -1,7 +1,14 @@
 import React from 'react';
 import { Slide, List, Image } from 'spectacle';
 
-import { Text, ListItem, Heading, CodePane, TwoColumn } from 'components';
+import {
+  Text,
+  ListItem,
+  Heading,
+  CodePane,
+  TwoColumn,
+  TaskRunners,
+} from 'components';
 import img from 'img';
 
 export default [
@@ -62,19 +69,20 @@ export default [
     </TwoColumn>
   </Slide>,
   <Slide>
-    <Heading size={5}>Task Runners as Build Tools 🖼️</Heading>
-    <List>
+    <Heading size={5}>Task Runners as Build Tools</Heading>
+    <TaskRunners className="w-100 ba" />
+    {/* <List>
       <ListItem>Have to instruct it on how to build your app</ListItem>
       <ListItem>
         Have to connect the location of the generated JS & HTML to other static
         assets
       </ListItem>
-      {/* <ListItem>Have to define the tasks</ListItem>
+      <ListItem>Have to define the tasks</ListItem>
       <ListItem>Where do templates end up. What will they end up as.</ListItem>
       <ListItem>where will css go</ListItem>
       <ListItem>images 🤷🏽‍♂️</ListItem>
-      <ListItem>relative links in my template</ListItem> */}
-      {/*  for example if you are writing a react component and that component uses an image. What will be the url of that image? 🤷🏽‍♂️*/}
-    </List>
+      <ListItem>relative links in my template</ListItem>
+       for example if you are writing a react component and that component uses an image. What will be the url of that image? 🤷🏽‍♂️
+    </List> */}
   </Slide>,
 ];
