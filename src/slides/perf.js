@@ -114,9 +114,9 @@ export default [
       { loc: [0, 0], title: 'Async Components in React' },
       { loc: [0, 22] },
       { loc: [3, 19] },
-      { loc: [9, 13] },
-      { loc: [14, 18] },
-      { loc: [22, 26] },
+      { loc: [9, 14] },
+      { loc: [15, 19] },
+      { loc: [23, 27] },
     ]}
   />,
   <CodeSlide

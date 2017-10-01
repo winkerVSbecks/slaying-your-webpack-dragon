@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layout, Fit, Fill } from 'spectacle';
 
 export const TwoColumn = ({ children, props }) => (
   <div className="flex" {...props}>

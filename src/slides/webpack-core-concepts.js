@@ -103,7 +103,6 @@ export default [
     <Heading size={4}>
       <Triangle className="w4 h4" /> Triangle Catalogue
     </Heading>
-    <Text>introduce css imports and image in CSS file here</Text>
   </Slide>,
   <Slide bgImage={img.babelFish}>
     <Heading textAlign="center" size={1}>
@@ -142,9 +141,6 @@ export default [
       },
     ]}
   />,
-  <Slide>
-    <Text>demonstrate build output 🎫</Text>
-  </Slide>,
   <CodeSlide
     transition={[]}
     lang="js"

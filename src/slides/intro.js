@@ -38,7 +38,7 @@ export default [
     <List>
       <ListItem>CSS Concactation</ListItem>
       <ListItem>CSS Pre-processors</ListItem>
-      <ListItem>Compass.app</ListItem>
+      <ListItem>Livereload/Browsersync</ListItem>
       <ListItem>Relied on others to setup grunt</ListItem>
     </List>
   </Slide>,
