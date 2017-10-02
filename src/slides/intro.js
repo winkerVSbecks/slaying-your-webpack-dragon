@@ -69,8 +69,10 @@ export default [
     </TwoColumn>
   </Slide>,
   <Slide>
-    <Heading size={5}>Task Runners as Build Tools</Heading>
-    <TaskRunners className="w-100 ba" />
+    <Heading size={6} margin={0}>
+      Task Runners as Build Tools
+    </Heading>
+    <TaskRunners className="w-100" />
     {/* <List>
       <ListItem>Have to instruct it on how to build your app</ListItem>
       <ListItem>
