@@ -3,14 +3,14 @@ import anime from 'animejs';
 
 const seek = ({ targets, stroke, offset }) => ({
   targets,
-  stroke,
   offset,
   translateX: [25, 0],
   translateY: [25, 0],
   scale: [0.9, 1],
   ease: 'easeInElastic',
   duration: 400,
-  delay: (_, idx) => idx * 150,
+  delay: (_, idx) => idx * 100,
+  stroke: el => el.dataset.color || '#00E676',
 });
 
 const step = ({ targets, stroke }) => ({
@@ -21,9 +21,10 @@ const step = ({ targets, stroke }) => ({
   opacity: [0, 1],
   ease: 'easeInElastic',
   duration: 600,
+  delay: (_, idx) => idx * 50,
 });
 
-export class TaskRunners extends Component {
+export class Bundlers extends Component {
   componentDidMount() {
     const qAll = q => this.el.querySelectorAll(q);
     this.tl = anime.timeline({
@@ -34,36 +35,12 @@ export class TaskRunners extends Component {
     this.tl
       .add(
         seek({
-          targets: qAll('.js-js'),
-          stroke: '#00E676',
+          targets: qAll('.js-thing'),
           offset: 1200,
         }),
       )
-      .add(step({ targets: qAll('.js-build-js') }))
-      .add(
-        seek({
-          targets: qAll('.js-misc'),
-          stroke: '#B2FF59',
-          offset: '-=300',
-        }),
-      )
-      .add(step({ targets: qAll('.js-build-misc') }))
-      .add(
-        seek({
-          targets: qAll('.js-css'),
-          stroke: '#36C3FF',
-          offset: '-=300',
-        }),
-      )
-      .add(step({ targets: qAll('.js-build-css') }))
-      .add(
-        seek({
-          targets: qAll('.js-img'),
-          stroke: '#FFEB3B',
-          offset: '-=300',
-        }),
-      )
-      .add(step({ targets: qAll('.js-build-img') }));
+      .add(step({ targets: qAll('.js-build') }))
+      .add({ duration: 1200 });
   }
 
   componentWillUnmount() {
@@ -80,48 +57,76 @@ export class TaskRunners extends Component {
         }}
       >
         <g stroke="#fff" strokeWidth="3" fill="none">
-          <rect className="js-js" x="400" y="62.5" width="100" height="100" />
-          <rect className="js-js" x="400" y="187.5" width="100" height="100" />
+          <rect className="js-thing" x="400" y="250" width="100" height="100" />
+
           <rect
-            className="js-misc"
-            x="400"
+            className="js-thing"
+            x="275"
+            y="187.5"
+            width="100"
+            height="100"
+          />
+          <circle
+            data-color="#FFEB3B"
+            className="js-thing"
+            cx={50 + 275}
+            cy={50 + 312.5}
+            r="50"
+          />
+
+          <rect
+            className="js-thing"
+            data-color="#36C3FF"
+            x="150"
+            y="112.5"
+            width="100"
+            height="100"
+          />
+          <rect
+            className="js-thing"
+            data-color="#B2FF59"
+            x="150"
+            y="237.5"
+            width="100"
+            height="100"
+          />
+          <rect
+            className="js-thing"
+            x="150"
+            y="362.5"
+            width="100"
+            height="100"
+          />
+
+          <rect className="js-thing" x="25" y="62.5" width="100" height="100" />
+          <rect
+            className="js-thing"
+            x="25"
+            y="187.5"
+            width="100"
+            height="100"
+          />
+          <rect
+            className="js-thing"
+            data-color="#B2FF59"
+            x="25"
             y="312.5"
             width="100"
             height="100"
           />
           <rect
-            className="js-misc"
-            x="400"
+            className="js-thing"
+            data-color="#36C3FF"
+            x="25"
             y="437.5"
             width="100"
             height="100"
           />
-
-          <rect className="js-js" x="275" y="62.5" width="100" height="100" />
-          <rect className="js-css" x="275" y="187.5" width="100" height="100" />
-          <circle className="js-img" cx={50 + 275} cy={50 + 312.5} r="50" />
-          <rect className="js-css" x="275" y="437.5" width="100" height="100" />
-
-          <rect className="js-js" x="150" y="62.5" width="100" height="100" />
-          <rect className="js-js" x="150" y="187.5" width="100" height="100" />
-          <rect className="js-js" x="150" y="312.5" width="100" height="100" />
-          <rect
-            className="js-misc"
-            x="150"
-            y="437.5"
-            width="100"
-            height="100"
-          />
-
-          <rect className="js-js" x="25" y="62.5" width="100" height="100" />
-          <rect className="js-css" x="25" y="187.5" width="100" height="100" />
-          <rect className="js-js" x="25" y="312.5" width="100" height="100" />
-          <rect className="js-css" x="25" y="437.5" width="100" height="100" />
         </g>
 
         <g stroke="none">
           <rect
-            className="js-build-js"
+            className="js-build"
             opacity="0"
             fill="#00E676"
             x="575"
@@ -130,7 +135,7 @@ export class TaskRunners extends Component {
             height="100"
           />
           <text
-            className="js-build-js"
+            className="js-build"
             opacity="0"
             x="625"
             y="231"
@@ -141,7 +146,7 @@ export class TaskRunners extends Component {
             bundle.js
           </text>
           <rect
-            className="js-build-misc"
+            className="js-build"
             opacity="0"
             fill="#B2FF59"
             x="725"
@@ -150,7 +155,7 @@ export class TaskRunners extends Component {
             height="100"
           />
           <text
-            className="js-build-misc"
+            className="js-build"
             opacity="0"
             x="775"
             y="231"
@@ -161,7 +166,7 @@ export class TaskRunners extends Component {
             bundle2.js
           </text>
           <rect
-            className="js-build-css"
+            className="js-build"
             opacity="0"
             fill="#36C3FF"
             x="575"
@@ -170,7 +175,7 @@ export class TaskRunners extends Component {
             height="100"
           />
           <text
-            className="js-build-css"
+            className="js-build"
             opacity="0"
             x="625"
             y="381"
@@ -181,7 +186,7 @@ export class TaskRunners extends Component {
             bundle.css
           </text>
           <circle
-            className="js-build-img"
+            className="js-build"
             opacity="0"
             fill="#FFEB3B"
             cx="775"
@@ -189,7 +194,7 @@ export class TaskRunners extends Component {
             r="50"
           />
           <text
-            className="js-build-img"
+            className="js-build"
             opacity="0"
             x="775"
             y="381"

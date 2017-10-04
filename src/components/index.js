@@ -10,3 +10,4 @@ export * from './triangle';
 export * from './code-splitting';
 export * from './build-comparision';
 export * from './task-runners';
+export * from './bundlers';

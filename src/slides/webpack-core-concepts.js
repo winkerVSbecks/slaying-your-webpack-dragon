@@ -15,19 +15,6 @@ import img from 'img';
 
 export default [
   <Slide>
-    <Heading size={6} margin="0 0 4rem 0" caps className="tracked ttc">
-      Webpack
-    </Heading>
-    <Text margin="2rem 0">Starts at an entry point.</Text>
-    <Text margin="2rem 0">
-      Recursively builds a dependency graph of modules your app uses.
-    </Text>
-    <Text margin="2rem 0">Packages them all into a bundle.</Text>
-  </Slide>,
-  <Slide>
-    <Text>🖼️ webpack tree path animation to bundle</Text>
-  </Slide>,
-  <Slide>
     <div className="flex items-stretch">
       <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
         <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/index.js</div>
@@ -71,13 +58,14 @@ export default [
     ]}
   />,
   <Slide textColor="primary">
-    <Text>
-      👨🏽‍💻 demonstrate the hello world here. Build and start live server to
+    <Heading textAlign="center">👨🏽‍💻</Heading>
+    {/* <Text>
+      demonstrate the hello world here. Build and start live server to
       run the app
-    </Text>
-    <Text>
+    </Text> */}
+    {/* <Text>
       Annoying to run two things at the same time so… webpack-dev-server
-    </Text>
+    </Text> */}
   </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>NPM Scripts</Heading>
