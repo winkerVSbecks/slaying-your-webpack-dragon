@@ -1,6 +1,7 @@
 import React from 'react';
 import Terminal from 'spectacle-terminal';
 import { Command, B, G } from './command';
+import img from 'img';
 
 export const WebpackBasicBuild = () => (
   <Terminal
@@ -8,6 +9,12 @@ export const WebpackBasicBuild = () => (
     output={[
       <Command>npm install webpack</Command>,
       <Command>node_modules/.bin/webpack --config webpack.config.js</Command>,
+      [
+        <div>{'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️</div>,
+        <div>
+          {'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️{'         '}✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+        </div>,
+      ],
       <div className="fw3 lh-copy">
         <div className="h2" />
         <div>
@@ -48,6 +55,9 @@ module.exports = {
 
 
 `}</pre>,
+      <div className="h5">
+        <img alt="what does that even mean?" src={img.what} className="h5" />
+      </div>,
     ]}
   />
 );

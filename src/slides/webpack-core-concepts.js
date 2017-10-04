@@ -108,11 +108,15 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/loaders.example')}
     ranges={[
+      { loc: [8, 10], title: 'Loaders' },
       { loc: [8, 24] },
       { loc: [10, 15], note: 'Compile JS/JSX using Babel' },
+      { loc: [11, 12] },
+      { loc: [13, 14] },
+      { loc: [12, 13], note: "🙏🏽 please don't transpile node_modules" },
       {
         loc: [15, 16],
-        title: 'Chain Loaders!',
+        title: 'Chain Loaders! 🚂🚋🚋',
         note: '.css file ➡️ resolve @import and url() ➡️ <style>',
       },
       { loc: [16, 23], note: 'Load images' },

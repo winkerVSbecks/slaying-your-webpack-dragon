@@ -56,7 +56,7 @@ export class Bundlers extends Component {
           this.el = el;
         }}
       >
-        <g stroke="#fff" strokeWidth="3" fill="none">
+        <g stroke="#fff" strokeWidth="4" fill="none">
           <rect className="js-thing" x="400" y="250" width="100" height="100" />
 
           <rect

@@ -8,4 +8,5 @@ export default {
   gulp: require('./gulp.svg'),
   me: require('./me.png'),
   vueLoader: require('./vue-loader.png'),
+  what: require('./what.gif'),
 };
