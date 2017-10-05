@@ -186,7 +186,7 @@ module.exports = {
   entry: '📄 Entry',
   output: '📦 Output',
   module: {
-    rules: ['🖨️ Loaders'],
+    rules: ['🐡️ Loaders'],
   },
   plugins: ['🔌 Plugin'],
 };

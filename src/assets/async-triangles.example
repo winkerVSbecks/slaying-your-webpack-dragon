@@ -6,7 +6,7 @@ import Equilateral from './Equilateral';
 import Isosceles from './Isosceles';
 import Scalene from './Scalene';
 import Heronian from './Heronian';
-import AlmostEquilateralHeronian from AlmostEquilateralHeronian';
+import AlmostEquilateralHeronian from './AlmostEquilateralHeronian';
 
 export default [
  Right,

@@ -62,6 +62,7 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/extract-text.example')}
     ranges={[
+      { loc: [0, 0], title: 'Extracting CSS' },
       { loc: [3, 4], title: 'Extract Text Plugin' },
       { loc: [19, 40], note: 'extract CSS into a .css file' },
       { loc: [23, 38] },
@@ -112,8 +113,8 @@ export default [
     code={require('../assets/async-component-react.example')}
     ranges={[
       { loc: [0, 0], title: 'Async Components in React' },
-      { loc: [0, 22] },
-      { loc: [3, 19] },
+      { loc: [0, 23] },
+      { loc: [3, 20] },
       { loc: [9, 14] },
       { loc: [15, 19] },
       { loc: [23, 27] },

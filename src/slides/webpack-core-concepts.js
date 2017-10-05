@@ -71,6 +71,11 @@ export default [
     <Heading size={4}>NPM Scripts</Heading>
     <CodePane textSize="1.5rem" src="scripts" lang="js" />
   </Slide>,
+  <Slide>
+    <Heading size={4}>
+      <Triangle className="w4 h4" /> Triangle Catalogue
+    </Heading>
+  </Slide>,
   <Slide margin="0">
     <Heading size={4}>Everything Is a Module!</Heading>
     <List>
@@ -87,18 +92,13 @@ export default [
       <ListItem>Image url in a stylesheet or HTML</ListItem>
     </List>
   </Slide>,
-  <Slide>
-    <Heading size={4}>
-      <Triangle className="w4 h4" /> Triangle Catalogue
-    </Heading>
-  </Slide>,
   <Slide bgImage={img.babelFish}>
     <Heading textAlign="center" size={1}>
       Loaders
     </Heading>
   </Slide>,
   <Slide margin="0">
-    <Heading size={4}>Loaders 🖨️</Heading>
+    <Heading size={4}>Loaders 🐡️</Heading>
     <Text>Transform files into modules</Text>
   </Slide>,
   <CodeSlide
@@ -108,11 +108,11 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/loaders.example')}
     ranges={[
-      { loc: [8, 10], title: 'Loaders' },
+      { loc: [8, 10], title: 'Rules for Loading Modules' },
       { loc: [8, 24] },
       { loc: [10, 15], note: 'Compile JS/JSX using Babel' },
-      { loc: [11, 12] },
-      { loc: [13, 14] },
+      { loc: [11, 12], note: 'which files to target' },
+      { loc: [13, 14], note: 'how to load them' },
       { loc: [12, 13], note: "🙏🏽 please don't transpile node_modules" },
       {
         loc: [15, 16],
@@ -133,6 +133,9 @@ export default [
       },
     ]}
   />,
+  <Slide>
+    <Text>Insert CSS Pipeline viz</Text>
+  </Slide>,
   <CodeSlide
     transition={[]}
     lang="js"
@@ -171,7 +174,7 @@ export default [
       { loc: [5, 6], note: '🐛 debugging' },
       { loc: [6, 7], note: '📄 Entry' },
       { loc: [7, 11], note: '📦 Output' },
-      { loc: [11, 30], note: '🖨️ Loaders' },
+      { loc: [11, 30], note: '🐡️ Loaders' },
       { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,

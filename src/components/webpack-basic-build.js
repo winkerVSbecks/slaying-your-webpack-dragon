@@ -5,17 +5,20 @@ import img from 'img';
 
 export const WebpackBasicBuild = () => (
   <Terminal
+    textSize="1em"
     title="triangle-catalogue-webpack-example"
     output={[
-      <Command>npm install webpack</Command>,
-      <Command>node_modules/.bin/webpack --config webpack.config.js</Command>,
+      <Command className="f3">npm install webpack</Command>,
+      <Command className="f3">
+        node_modules/.bin/webpack --config webpack.config.js
+      </Command>,
       [
-        <div>{'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️</div>,
-        <div>
+        <div className="f3">{'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️</div>,
+        <div className="f3">
           {'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️{'         '}✨✨✨✨✨✨✨✨✨✨✨✨✨✨
         </div>,
       ],
-      <div className="fw3 lh-copy">
+      <div className="fw3 lh-copy f3">
         <div className="h2" />
         <div>
           Hash: <B>fd81c516a582b78532ec</B>
@@ -42,8 +45,8 @@ export const WebpackBasicBuild = () => (
           {'   '}[1] <B>./src/math.js</B> 129 bytes {0} <G>[built]</G>
         </div>
       </div>,
-      <Command className="mt4">cat webpack.config.js</Command>,
-      <pre>{`const path = require('path');
+      <Command className="mt4 f3">cat webpack.config.js</Command>,
+      <pre className="f3">{`const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
