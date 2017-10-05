@@ -57,12 +57,11 @@ export default [
   <Slide>
     <Heading size={5}>Task Runners</Heading>
     <TwoColumn>
-      <Image
-        src={img.gulp}
-        margin="2rem 0"
-        className="bg-white w4 h4 br-100 bw2 ba b--white"
-      />
-      <List>
+      <div className="flex flex-column">
+        <Image src={img.gruntGulping} margin="0" className="w4 ph2 pt3" />
+        {/* <Image src={img.gulp} margin="-2rem 0 0 -1rem " className="w4 h4" /> */}
+      </div>
+      <List className="list">
         <ListItem>Automate tasks in your development workflow.</ListItem>
         <ListItem>Can do pretty much anything!</ListItem>
         <ListItem>Write or configure tasks.</ListItem>

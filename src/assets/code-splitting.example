@@ -6,12 +6,9 @@ import('./Equilateral')
 
 
 
-// Promise
+
 import('./Equilateral')
   .then(Equilateral => { /* Use <Equilateral /> */ });
-
-// or async/await
-const Equilateral = await import('./Equilateral');
 
 
 

@@ -89,8 +89,8 @@ export default [
         title: 'Dynamic Module Imports',
         note: 'Creates a split point! ✂️',
       },
-      { loc: [8, 14] },
-      { loc: [17, 18], note: 'name the split chunk' },
+      { loc: [8, 11], title: 'Promise' },
+      { loc: [14, 15], note: 'name the split chunk' },
     ]}
   />,
   <Slide>
