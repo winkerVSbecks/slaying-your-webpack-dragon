@@ -1,3 +1,0 @@
-<div v-if="activeSlide === 4">
-  <async-equilateral />
-</div>

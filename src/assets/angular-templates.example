@@ -1,7 +1,0 @@
-app.config(['$routeProvider', function($routeProvider) {
-  $routeProvider
-    .when('/todos', {
-      templateUrl: 'partials/ToDoList.html',
-      controller: function ToDoListCtrl() { ... }
-    })
-});

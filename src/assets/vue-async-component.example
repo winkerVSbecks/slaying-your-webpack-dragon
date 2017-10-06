@@ -1,4 +1,0 @@
-Vue.component(
-  'async-equilateral',
-  () => import('./Equilateral')
-);
