@@ -1,0 +1,6 @@
+.hero {
+  background-image: url('./assets/triangle-pattern.svg');
+  background-position: center center;
+  background-repeat: space;
+  height: 20rem;
+}

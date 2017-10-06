@@ -87,6 +87,12 @@ export default [
       <Triangle className="w4 h4" /> Triangle Catalogue
     </Heading>
   </Slide>,
+  <Slide>
+    <Text>index.js</Text>
+    <CodePane src="loader-index" lang="js" margin="0 0 2rem 0" />
+    <Text>index.css</Text>
+    <CodePane src="loader-css" lang="css" />
+  </Slide>,
   <Slide margin="0">
     <Heading size={4}>Everything Is a Module!</Heading>
     <List>

@@ -134,7 +134,7 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/async-triangles.example')}
     ranges={[
-      { loc: [0, 0], title: 'Async Triangle Slides' },
+      { loc: [0, 0], title: 'Async Triangle Components' },
       { loc: [0, 25], note: 'triangles/index.js - Static Imports' },
       { loc: [25, 40], note: 'triangles/index.js - Dynamic Imports ✂️' },
       { loc: [44, 56], title: 'webpack.config.js' },
