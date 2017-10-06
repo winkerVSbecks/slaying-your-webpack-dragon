@@ -178,6 +178,15 @@ export default [
       They customize or enhance the webpack build process in a variety of ways.
     </Text>
   </Slide>,
+  <Slide>
+    <Heading size={6} lineHeight={1.5}>
+      Separating the Source Code from Our Distribution Code
+      {/*The "source" code is the code that we'll write and edit. The
+        "distribution" code is the minimized and optimized output of our build
+        process that will eventually be loaded in the browser*/}
+    </Heading>
+    <Image src={img.public} className="w-100" />
+  </Slide>,
   <CodeSlide
     transition={[]}
     lang="js"
@@ -195,4 +204,10 @@ export default [
       { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,
+  <Slide>
+    <Heading size={6} lineHeight={1.5}>
+      Build Output
+    </Heading>
+    <Image src={img.build} className="w-100" />
+  </Slide>,
 ];

@@ -82,9 +82,9 @@ export default [
     <Heading size={6} margin="0 0 4rem 0" caps className="tracked ttc">
       Bundlers
     </Heading>
-    <Text margin="2rem 0">Starts at an entry point.</Text>
+    <Text margin="2rem 0">Start at an entry point.</Text>
     <Text margin="2rem 0">
-      Recursively builds a dependency graph of modules your app uses.
+      Recursively build a dependency graph of modules your app uses.
     </Text>
     <Text margin="2rem 0">Packages them all into a bundle.</Text>
   </Slide>,

@@ -16,13 +16,15 @@ import img from 'img';
 export default [
   <Slide bgImage={img.bundle} />,
   <Slide>
-    <div className="flex flex-wrap">
+    <div
+      className="flex flex-wrap pa3 ba bw2"
+      style={{ borderColor: '#00E676' }}
+    >
       <Text
         textAlign="center"
-        textColor="primary"
-        bgColor="green"
+        textColor="white"
         lineHeight={2}
-        className="flex-none w-100"
+        className="flex-none w-100 pb3"
       >
         bundle.js
       </Text>
@@ -31,7 +33,8 @@ export default [
         textAlign="center"
         bgColor="yellow"
         textColor="primary"
-        className="flex-none w-50"
+        margin="0 1rem 0 0"
+        className="flex-auto"
       >
         app.js
       </Text>
@@ -40,7 +43,8 @@ export default [
         textAlign="center"
         bgColor="blue"
         textColor="primary"
-        className="flex-none w-50"
+        margin="0"
+        className="flex-auto"
       >
         app.css
       </Text>

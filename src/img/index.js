@@ -10,4 +10,6 @@ export default {
   vueLoader: require('./vue-loader.png'),
   what: require('./what.gif'),
   gruntGulping: require('./grunt-gulping.svg'),
+  public: require('./public.png'),
+  build: require('./build.png'),
 };
