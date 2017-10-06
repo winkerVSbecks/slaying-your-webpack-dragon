@@ -15,6 +15,11 @@ import {
 import img from 'img';
 
 export default [
+  // <Slide>
+  //   <Heading size={3}>
+  //     Webpack Bundles <span className="strike">code</span> everything
+  //   </Heading>
+  // </Slide>,
   <Slide>
     <div className="flex items-stretch">
       <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
@@ -34,6 +39,11 @@ export default [
   <Slide textColor="primary">
     <Heading size={4}>webpack.config.js</Heading>
     <CodePane textSize="2.25rem" src="webpack-concepts" lang="js" />
+    {/*
+      + where to start
+      + what to bundle
+      + and how to bundle it
+    */}
   </Slide>,
   <CodeSlide
     transition={[]}
@@ -149,6 +159,7 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/css-pipeline.example')}
     ranges={[
+      { loc: [8, 20] },
       { loc: [15, 39] },
       { loc: [18, 20] },
       {

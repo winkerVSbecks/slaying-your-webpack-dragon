@@ -17,7 +17,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: path.resolve(__dirname, 'src'),
-        loader: 'babel-loader',
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
@@ -26,7 +26,7 @@ module.exports = {
           use: [
             'css-loader',
             {
-              loader: 'postcss-loader',
+              use: 'postcss-loader',
               options: { ... },
             },
           ],
@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: 'file-loader',
+        use: 'file-loader',
         options: {
           name: '[name].[hash:8].[ext]',
         },

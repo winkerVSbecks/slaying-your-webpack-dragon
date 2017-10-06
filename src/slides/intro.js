@@ -47,7 +47,7 @@ export default [
       <ListItem>CSS Concactation</ListItem>
       <ListItem>CSS Pre-processors</ListItem>
       <ListItem>Livereload/Browsersync</ListItem>
-      <ListItem>Relied on others to setup grunt</ListItem>
+      <ListItem>Hacked grunt scripts</ListItem>
     </List>
   </Slide>,
   <Slide>
@@ -60,10 +60,10 @@ export default [
       <div className="flex flex-column mr3">
         <Image src={img.gruntGulping} margin="0" className="w4 ph2 pt3" />
       </div>
-      <List className="list">
+      <List className="list lh-title">
         <ListItem>Automate tasks in your development workflow.</ListItem>
-        <ListItem>Can do pretty much anything!</ListItem>
         <ListItem>Write or configure tasks.</ListItem>
+        <ListItem>Can do pretty much anything!</ListItem>
       </List>
     </TwoColumn>
   </Slide>,
@@ -72,23 +72,15 @@ export default [
       Task Runners as Build Tools
     </Heading>
     <TaskRunners className="w-100" />
-    {/* <List>
-      <ListItem>Have to instruct it on how to build your app</ListItem>
-      <ListItem>
-        Have to connect the location of the generated JS & HTML to other static
-        assets
-      </ListItem>
-      <ListItem>Have to define the tasks</ListItem>
-      <ListItem>Where do templates end up. What will they end up as.</ListItem>
-      <ListItem>where will css go</ListItem>
-      <ListItem>images 🤷🏽‍♂️</ListItem>
-      <ListItem>relative links in my template</ListItem>
-       for example if you are writing a react component and that component uses an image. What will be the url of that image? 🤷🏽‍♂️
-    </List> */}
+    {/*
+      + Have to instruct it on how to build your app in the form of tasks</ListItem>
+      + code is written with an awareness of where things will end up
+       for example if you are writing a react component and that component uses an image. What will be the url of that image?
+    */}
   </Slide>,
   <Slide>
     <Heading size={6} margin="0 0 4rem 0" caps className="tracked ttc">
-      Webpack
+      Bundlers
     </Heading>
     <Text margin="2rem 0">Starts at an entry point.</Text>
     <Text margin="2rem 0">

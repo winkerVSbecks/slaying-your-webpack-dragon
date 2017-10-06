@@ -18,8 +18,7 @@ export const WebpackBasicBuild = () => (
           {'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️{'         '}✨✨✨✨✨✨✨✨✨✨✨✨✨✨
         </div>,
       ],
-      <div className="fw3 lh-copy f3">
-        <div className="h2" />
+      <div className="fw3 lh-copy f3 mv5">
         <div>
           Hash: <B>fd81c516a582b78532ec</B>
         </div>
@@ -45,7 +44,7 @@ export const WebpackBasicBuild = () => (
           {'   '}[1] <B>./src/math.js</B> 129 bytes {0} <G>[built]</G>
         </div>
       </div>,
-      <Command className="mt4 f3">cat webpack.config.js</Command>,
+      <Command className="mv4 f3">cat webpack.config.js</Command>,
       <pre className="f3">{`const path = require('path');
 
 module.exports = {

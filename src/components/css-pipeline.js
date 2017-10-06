@@ -84,7 +84,7 @@ const PostCSS = () => (
       className="absolute left-0 mt3 f4 pa3 lh-copy h4 flex items-center"
       style={{ top: '100%', backgroundColor: '#FFEB3B' }}
     >
-      transform using postcss plugins
+      transform using plugins
     </div>
   </div>
 );
@@ -119,20 +119,26 @@ export class CssPipeline extends React.Component {
         onClick={this.next}
       >
         <div
-          className="flex-auto h4 flex items-center justify-center ph4"
-          style={{ backgroundColor: '#FF7EAB' }}
+          className="flex-auto h4 flex items-center justify-center ph4 relative"
+          style={{ backgroundColor: '#00E676' }}
         >
-          &#x3C;style&#x3E;
+          style loader
+          <div
+            className="absolute left-0 mt3 f4 pa3 lh-copy ph3 h4 flex items-center w-100"
+            style={{ top: '100%', backgroundColor: '#B2FF59' }}
+          >
+            loads CSS into a &#x3C;style&#x3E; tag
+          </div>
         </div>
         <Left />
         <div
           className="flex-auto h4 relative flex items-center justify-center ph3"
-          style={{ backgroundColor: '#00E676' }}
+          style={{ backgroundColor: '#7C55FB' }}
         >
           css loader
           <div
             className="absolute left-0 mt3 f4 pa3 lh-copy ph3 h4 flex items-center"
-            style={{ top: '100%', backgroundColor: '#B2FF59' }}
+            style={{ top: '100%', backgroundColor: '#ea80fc' }}
           >
             Resolve @import and url()
           </div>
