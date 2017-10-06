@@ -23,7 +23,9 @@ export const BuildComparision = props => (
       </tr>
       <tr>
         <td className="tl bb pv3 pl3">📤 + ✂️ + 🎯</td>
-        <td className="bb pv3">768 kB</td>
+        <td className="bb pv3">
+          768 kB<sup>*</sup>
+        </td>
       </tr>
       <tr>
         <td className="tl bb pv3 pl3">📤 + ✂️ + 🎯 + 🤐</td>

@@ -14,6 +14,9 @@ import {
 import img from 'img';
 
 export default [
+  <Slide>
+    <Heading size={1}>Perf ⚡⏱️</Heading>
+  </Slide>,
   <Slide bgImage={img.bundle} />,
   <Slide>
     <div
