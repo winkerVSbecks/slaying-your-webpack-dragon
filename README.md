@@ -3,7 +3,7 @@
 Slides for my CSS DevConf talk.
 
 + View the published slides at: [winkervsbecks.github.io/slaying-your-webpack-dragon](https://winkervsbecks.github.io/slaying-your-webpack-dragon)
-+ The code for the demo app is available at: [winkerVSbecks/triangle-catalogue-webpack-example](https://github.com/winkerVSbecks/triangle-catalogue-webpack-example).
++ The code for the demo app is available at: [winkerVSbecks/triangle-catalogue-webpack-example](https://github.com/winkerVSbecks/triangle-catalogue-webpack-example)
 
 
 #### Available Scripts
