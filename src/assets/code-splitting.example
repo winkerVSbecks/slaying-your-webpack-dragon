@@ -1,0 +1,15 @@
+import './Equilateral';
+
+
+
+import('./Equilateral')
+
+
+
+
+import('./Equilateral')
+  .then(Equilateral => { /* Use <Equilateral /> */ });
+
+
+
+import(/* webpackChunkName: "equilateral" */ './Equilateral');
