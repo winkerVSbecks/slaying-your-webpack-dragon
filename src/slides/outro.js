@@ -58,7 +58,9 @@ export default [
     </Text>
     <Text textSize="2.25rem">@winkerVSbecks</Text>
     <Text margin="4rem 0 0 0" textSize="2.25rem">
-      tiny.cc/webpack-dragon
+      <Link href="https://tiny.cc/webpack-dragon" textColor="secondary">
+        tiny.cc/webpack-dragon
+      </Link>
     </Text>
   </Slide>,
 ];
