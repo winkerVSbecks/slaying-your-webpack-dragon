@@ -142,7 +142,8 @@ export default [
     ]}
   />,
   <Slide>
-    <Image src={img.codeSplitting} className="w-100" />
+    <Image src={img.chrome} className="w-100" margin="0" />
+    <Image src={img.codeSplitting} className="w-100" margin="-0.38rem 0 0 0" />
   </Slide>,
   <Slide>
     <Heading size={3} textAlign="center">

@@ -12,4 +12,5 @@ export default {
   gruntGulping: require('./grunt-gulping.svg'),
   public: require('./public.png'),
   build: require('./build.png'),
+  chrome: require('./chrome.svg'),
 };
