@@ -83,5 +83,6 @@
     "rules": {
       "jsx-a11y/accessible-emoji": 0
     }
-  }
+  },
+  "homepage": "https://winkervsbecks.github.io/slaying-your-webpack-dragon"
 }
