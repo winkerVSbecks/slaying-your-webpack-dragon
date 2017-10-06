@@ -10,6 +10,7 @@ import {
   WebpackBasicBuild,
   Triangle,
   Code,
+  CssPipeline,
 } from 'components';
 import img from 'img';
 
@@ -89,7 +90,9 @@ export default [
       <ListItem>
         <Code>@import</Code> statement in stylesheets
       </ListItem>
-      <ListItem>Image url in a stylesheet or HTML</ListItem>
+      <ListItem>
+        Image <Code>url()</Code> in a stylesheet or HTML
+      </ListItem>
     </List>
   </Slide>,
   <Slide bgImage={img.babelFish}>
@@ -133,8 +136,11 @@ export default [
       },
     ]}
   />,
-  <Slide>
-    <Text>Insert CSS Pipeline viz</Text>
+  <Slide margin="0">
+    <Heading size={4} margin="0 0 4rem 0">
+      The CSS Pipeline
+    </Heading>
+    <CssPipeline />
   </Slide>,
   <CodeSlide
     transition={[]}
