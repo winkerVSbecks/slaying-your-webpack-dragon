@@ -12,6 +12,7 @@ import {
   Code,
   CssPipeline,
   Chrome,
+  WebpackLoaders,
 } from 'components';
 import img from 'img';
 
@@ -113,13 +114,12 @@ export default [
     <CodePane src="loader-css" lang="css" />
   </Slide>,
   <Slide bgImage={img.babelFish}>
-    <Heading textAlign="center" size={1}>
+    <Heading textAlign="center" size={1} margin="0">
       Loaders
     </Heading>
-  </Slide>,
-  <Slide margin="0">
-    <Heading size={4}>Loaders 🐡️</Heading>
-    <Text>Transform files into modules</Text>
+    <Heading textAlign="center" size={5} margin="0">
+      Transform files into modules
+    </Heading>
   </Slide>,
   <CodeSlide
     transition={[]}
@@ -153,8 +153,22 @@ export default [
       },
     ]}
   />,
+  <Slide textColor="primary">
+    <Heading size={4}>Build with Loaders</Heading>
+    <WebpackLoaders />
+  </Slide>,
   <Slide>
     <Chrome src={img.svgUrl} />
+    <div
+      style={{
+        color: '#00E676',
+        top: '19.6rem',
+        right: '3rem',
+        width: '32rem',
+        height: '2.5rem',
+      }}
+      className="absolute ba bw3"
+    />
   </Slide>,
   <Slide margin="0">
     <Heading size={4} margin="0 0 4rem 0">
