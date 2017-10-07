@@ -12,3 +12,7 @@ export const G = props => (
 );
 
 export const B = props => <span className="fw8" {...props} />;
+
+export const Y = props => (
+  <span style={{ color: '#FFEB3B' }} className="fw8" {...props} />
+);

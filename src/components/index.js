@@ -12,3 +12,5 @@ export * from './build-comparision';
 export * from './task-runners';
 export * from './bundlers';
 export * from './css-pipeline';
+export * from './chrome';
+export * from './webpack-extract-css';

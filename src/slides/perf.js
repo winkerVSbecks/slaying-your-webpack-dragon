@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, List, Image } from 'spectacle';
+import { Slide, List } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
 import {
@@ -10,6 +10,8 @@ import {
   CodeSplitting,
   TwoColumn,
   BuildComparision,
+  Chrome,
+  WebpackExtractCss,
 } from 'components';
 import img from 'img';
 
@@ -76,6 +78,9 @@ export default [
       { loc: [54, 57] },
     ]}
   />,
+  <Slide textColor="primary">
+    <WebpackExtractCss />
+  </Slide>,
   <Slide margin="0">
     <Heading size={5}>What's Really Inside the Bundle?</Heading>
     <CodePane textSize="1.5rem" src="analyze" lang="js" />
@@ -142,8 +147,7 @@ export default [
     ]}
   />,
   <Slide>
-    <Image src={img.chrome} className="w-100" margin="0" />
-    <Image src={img.codeSplitting} className="w-100" margin="-0.38rem 0 0 0" />
+    <Chrome src={img.codeSplitting} />
   </Slide>,
   <Slide>
     <Heading size={3} textAlign="center">

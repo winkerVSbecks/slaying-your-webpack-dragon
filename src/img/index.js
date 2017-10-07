@@ -13,4 +13,5 @@ export default {
   public: require('./public.png'),
   build: require('./build.png'),
   chrome: require('./chrome.svg'),
+  svgUrl: require('./svg-url.png'),
 };

@@ -11,6 +11,7 @@ import {
   Triangle,
   Code,
   CssPipeline,
+  Chrome,
 } from 'components';
 import img from 'img';
 
@@ -55,7 +56,7 @@ export default [
         loc: [3, 4],
         note: 'The first file to kick off your app',
       },
-      { loc: [4, 8], note: 'How to treat bundled code' },
+      { loc: [4, 8], note: 'Where to output the bundle' },
       {
         loc: [0, 1],
         title: 'Node.js',
@@ -80,18 +81,7 @@ export default [
   </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>NPM Scripts</Heading>
-    <CodePane textSize="1.5rem" src="scripts" lang="js" />
-  </Slide>,
-  <Slide>
-    <Heading size={4}>
-      <Triangle className="w4 h4" /> Triangle Catalogue
-    </Heading>
-  </Slide>,
-  <Slide>
-    <Text>index.js</Text>
-    <CodePane src="loader-index" lang="js" margin="0 0 2rem 0" />
-    <Text>index.css</Text>
-    <CodePane src="loader-css" lang="css" />
+    <CodePane textSize="1.9rem" src="scripts" lang="js" />
   </Slide>,
   <Slide margin="0">
     <Heading size={4}>Everything Is a Module!</Heading>
@@ -110,6 +100,17 @@ export default [
         Image <Code>url()</Code> in a stylesheet or HTML
       </ListItem>
     </List>
+  </Slide>,
+  <Slide>
+    <Heading size={4}>
+      <Triangle className="w4 h4" /> Triangle Catalogue
+    </Heading>
+  </Slide>,
+  <Slide>
+    <Text>index.js</Text>
+    <CodePane src="loader-index" lang="js" margin="0 0 2rem 0" />
+    <Text>index.css</Text>
+    <CodePane src="loader-css" lang="css" />
   </Slide>,
   <Slide bgImage={img.babelFish}>
     <Heading textAlign="center" size={1}>
@@ -152,6 +153,9 @@ export default [
       },
     ]}
   />,
+  <Slide>
+    <Chrome src={img.svgUrl} />
+  </Slide>,
   <Slide margin="0">
     <Heading size={4} margin="0 0 4rem 0">
       The CSS Pipeline
