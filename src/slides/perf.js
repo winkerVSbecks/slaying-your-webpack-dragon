@@ -29,7 +29,7 @@ export default [
         textAlign="center"
         textColor="white"
         lineHeight={2}
-        className="flex-none w-100 pb3"
+        className="flex-none w-100 pb3 fw9"
       >
         bundle.js
       </Text>
@@ -39,9 +39,9 @@ export default [
         bgColor="yellow"
         textColor="primary"
         margin="0 1rem 0 0"
-        className="flex-auto"
+        className="flex-auto fw9"
       >
-        app.js
+        JS
       </Text>
       <Text
         lineHeight={2}
@@ -49,9 +49,9 @@ export default [
         bgColor="blue"
         textColor="primary"
         margin="0"
-        className="flex-auto"
+        className="w5 fw9"
       >
-        app.css
+        CSS
       </Text>
     </div>
   </Slide>,

@@ -2,7 +2,7 @@ import React from 'react';
 import Terminal from 'spectacle-terminal';
 import { Command, B, G, Y } from './command';
 
-export const WebpackExtractCss = () => (
+export const WebpackHtmlPlugin = () => (
   <Terminal
     textSize="1em"
     title="triangle-catalogue-webpack-example"
@@ -10,13 +10,13 @@ export const WebpackExtractCss = () => (
       <Command className="f4">npm run start</Command>,
       <div className="fw3 lh-copy f4 mt3">
         <div>
-          Hash: <B>5c32f180b473f3dd7b51</B>
+          Hash: <B>ebd58041e767fd2f622c</B>
         </div>
         <div>
           Version: webpack <B>3.5.1</B>
         </div>
         <div>
-          Time: <B>3840</B>ms
+          Time: <B>3207</B>ms
         </div>
         <div className="h1" />
         <div className="fw8">
@@ -29,34 +29,22 @@ export const WebpackExtractCss = () => (
           <G>[emitted]</G>
         </div>
         <div>
-          <Y>{'             '}main.5c68c3b0.js</Y>
-          {'     '}785 kB{'       '}0{'  '}
+          <Y>{'             '}main.e33ac9b7.js</Y>
+          {'     '}930 kB{'       '}0{'  '}
           <G>[emitted]</G>
           {'  '}
           <Y>[big]</Y>
           {'  '}main
         </div>
         <div>
-          <G>{'            '}main.ef848a01.css</G>
-          {'     '}125 kB{'       '}0{'  '}
-          <G>[emitted]</G>
-          {'         '}main
-        </div>
-        <div>
-          <G>{'         '}main.5c68c3b0.js.map</G>
-          {'     '}923 kB{'       '}0{'  '}
-          <G>[emitted]</G>
-          {'         '}main
-        </div>
-        <div>
-          <G>{'        '}main.ef848a01.css.map</G>
-          {'   '}94 bytes{'       '}0{'  '}
+          <G>{'         '}main.e33ac9b7.js.map</G>
+          {'    '}1.12 MB{'       '}0{'  '}
           <G>[emitted]</G>
           {'         '}main
         </div>
         <div>
           <G>{'                   '}index.html</G>
-          {'    '}1.63 kB{'          '}
+          {'    '}1.58 kB{'          '}
           <G>[emitted]</G>
         </div>
       </div>,

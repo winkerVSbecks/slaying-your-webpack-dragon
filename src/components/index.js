@@ -15,3 +15,4 @@ export * from './css-pipeline';
 export * from './chrome';
 export * from './webpack-extract-css';
 export * from './webpack-loaders';
+export * from './webpack-html-plugin';

@@ -13,15 +13,11 @@ import {
   CssPipeline,
   Chrome,
   WebpackLoaders,
+  WebpackHtmlPlugin,
 } from 'components';
 import img from 'img';
 
 export default [
-  // <Slide>
-  //   <Heading size={3}>
-  //     Webpack Bundles <span className="strike">code</span> everything
-  //   </Heading>
-  // </Slide>,
   <Slide>
     <div className="flex items-stretch">
       <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
@@ -218,7 +214,9 @@ export default [
     style={{ lineHeight: 1.25 }}
     code={require('../assets/html-plugin.example')}
     ranges={[
-      { loc: [7, 11], title: 'Dynamic Filename' },
+      { loc: [7, 11], title: 'Output for Distribution' },
+      { loc: [8, 9], title: 'Dynamic Filename' },
+      { loc: [9, 10], title: 'Output to build' },
       { loc: [2, 3], title: 'HTML Webpack Plugin' },
       { loc: [51, 57], note: '✨ automatically inject scripts into template' },
       { loc: [5, 6], note: '🐛 debugging' },
@@ -228,6 +226,10 @@ export default [
       { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,
+  <Slide textColor="primary">
+    <Heading size={6}>Build with Loaders + HTML Plugin</Heading>
+    <WebpackHtmlPlugin />
+  </Slide>,
   <Slide>
     <Heading size={6} lineHeight={1.5}>
       Build Output
