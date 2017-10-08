@@ -7,7 +7,7 @@ export const WebpackHtmlPlugin = () => (
     textSize="1em"
     title="triangle-catalogue-webpack-example"
     output={[
-      <Command className="f4">npm run start</Command>,
+      <Command className="f4">npm run build</Command>,
       <div className="fw3 lh-copy f4 mt3">
         <div>
           Hash: <B>ebd58041e767fd2f622c</B>

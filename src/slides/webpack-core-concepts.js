@@ -7,32 +7,21 @@ import {
   ListItem,
   Heading,
   CodePane,
-  WebpackBasicBuild,
   Triangle,
   Code,
   CssPipeline,
   Chrome,
+  WebpackHelloWorld,
+  WebpackBasicBuild,
   WebpackLoaders,
   WebpackHtmlPlugin,
 } from 'components';
 import img from 'img';
 
 export default [
-  <Slide margin="0">
-    <div className="flex items-stretch">
-      <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
-        <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/index.js</div>
-        <CodePane className="h-100" src="hw-index" lang="js" />
-      </div>
-      <div className="flex-auto ba b--moon-gray overflow-hidden bw1">
-        <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/math.js</div>
-        <CodePane className="h-100" src="hw-math" lang="js" />
-      </div>
-    </div>
-  </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>Hello Webpack</Heading>
-    <WebpackBasicBuild />
+    <WebpackHelloWorld />
   </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>webpack.config.js</Heading>
@@ -42,6 +31,14 @@ export default [
       + what to bundle
       + and how to bundle it
     */}
+  </Slide>,
+  <Slide>
+    <Heading size={5} className="flex items-center">
+      <Triangle className="w5 h5" />
+      <div className="ml4 lh-copy">
+        Triangle Catalogue<br />Demo App
+      </div>
+    </Heading>
   </Slide>,
   <CodeSlide
     transition={[]}
@@ -67,14 +64,8 @@ export default [
     ]}
   />,
   <Slide textColor="primary">
-    <Heading textAlign="center">👨🏽‍💻</Heading>
-    {/* <Text>
-      demonstrate the hello world here. Build and start live server to
-      run the app
-    </Text> */}
-    {/* <Text>
-      Annoying to run two things at the same time so… webpack-dev-server
-    </Text> */}
+    <Heading size={4}>My First Webpack Build</Heading>
+    <WebpackBasicBuild />
   </Slide>,
   <Slide textColor="primary">
     <Heading size={4}>NPM Scripts</Heading>
@@ -97,11 +88,6 @@ export default [
         Image <Code>url()</Code> in a stylesheet or HTML
       </ListItem>
     </List>
-  </Slide>,
-  <Slide>
-    <Heading size={4}>
-      <Triangle className="w4 h4" /> Triangle Catalogue
-    </Heading>
   </Slide>,
   <Slide>
     <Text>index.js</Text>

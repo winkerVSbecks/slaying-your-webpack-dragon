@@ -13,9 +13,9 @@ import {
 import img from 'img';
 
 export default [
-  <Slide>
+  <Slide margin="0">
     <div>
-      <Heading margin="0 0 8rem 0">
+      <Heading size={2} margin="0 0 8rem 0">
         Slaying Your<span className="ml3">🐲</span>
         <br />Webpack Dragon
       </Heading>

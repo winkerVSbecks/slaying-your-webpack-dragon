@@ -1,15 +1,23 @@
 import React from 'react';
 import Terminal from 'spectacle-terminal';
-import { Command, B, G, P } from './command';
+import { Command, B, G } from './command';
+import img from 'img';
 
 export const WebpackBasicBuild = () => (
   <Terminal
     textSize="1em"
     title="triangle-catalogue-webpack-example"
     output={[
+      <Command className="f3">npm install webpack</Command>,
       <Command className="f3">
         node_modules/.bin/webpack --config webpack.config.js
       </Command>,
+      [
+        <div className="f3">{'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️</div>,
+        <div className="f3">
+          {'  '}⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️{'         '}✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+        </div>,
+      ],
       <div className="fw3 lh-copy f3 mv5">
         <div>
           Hash: <B>fd81c516a582b78532ec</B>
@@ -36,16 +44,22 @@ export const WebpackBasicBuild = () => (
           {'   '}[1] <B>./src/math.js</B> 129 bytes {0} <G>[built]</G>
         </div>
       </div>,
-      <Command className="mv4 f3">serve public</Command>,
-      <G className="dib f3 lh-copy mb5 ba bw1 pa4">
-        <G className="db  mb4">Serving! </G>
-        <div className="mb4 white">
-          - Local: <P>http://localhost:5000</P>{' '}
-        </div>
-        <div className="white">
-          - On Your Network: <P>http://172.17.81.132:5000</P>
-        </div>
-      </G>,
+      <Command className="mv4 f3">cat webpack.config.js</Command>,
+      <pre className="f3">{`const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
+  },
+};
+
+
+`}</pre>,
+      <div className="h5">
+        <img alt="what does that even mean?" src={img.what} className="h5" />
+      </div>,
     ]}
   />
 );
