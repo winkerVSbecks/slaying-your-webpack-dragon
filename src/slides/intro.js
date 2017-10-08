@@ -51,8 +51,24 @@ export default [
     </List>
   </Slide>,
   <Slide>
-    <Heading size={5}>How Do Templates Make It to the Browser?</Heading>
-    <CodePane textSize="1.5rem" src="angular-templates" lang="js" />
+    <Heading size={5} margin="0 0 8rem 0">
+      Bundling 📦
+    </Heading>
+    <TwoColumn>
+      <Text>
+        module-1.js<br />
+        module-2.js<br />
+        module-3.js<br />
+      </Text>
+      <div className="flex items-center nt2">
+        <Text textSize="12rem" lineHeight={1}>
+          }
+        </Text>
+        <Text className="flex-auto" lineHeight={1} margin="1.5rem 0 0 2rem">
+          bundle.min.js
+        </Text>
+      </div>
+    </TwoColumn>
   </Slide>,
   <Slide>
     <Heading size={5}>Task Runners</Heading>
