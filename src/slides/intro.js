@@ -5,7 +5,6 @@ import {
   Text,
   ListItem,
   Heading,
-  CodePane,
   TwoColumn,
   TaskRunners,
   Bundlers,
@@ -26,20 +25,20 @@ export default [
       <Text textSize="2.25rem">@winkerVSbecks</Text>
     </div>
   </Slide>,
-  <Slide>
-    <Heading size={4}>2013</Heading>
-    <Text>Started building Single-Page Applications</Text>
-  </Slide>,
-  <Slide margin="0">
-    <div className="flex items-stretch">
-      <div className="w-50 mr3">
-        <CodePane src="all-the-js" textSize="1rem" lang="html" />
-      </div>
-      <div className="w-50">
-        <CodePane src="all-the-css" lang="css" className="h-100" />
-      </div>
-    </div>
-  </Slide>,
+  // <Slide>
+  //   <Heading size={4}>2013</Heading>
+  //   <Text>Started building Single-Page Applications</Text>
+  // </Slide>,
+  // <Slide margin="0">
+  //   <div className="flex items-stretch">
+  //     <div className="w-50 mr3">
+  //       <CodePane src="all-the-js" textSize="1rem" lang="html" />
+  //     </div>
+  //     <div className="w-50">
+  //       <CodePane src="all-the-css" lang="css" className="h-100" />
+  //     </div>
+  //   </div>
+  // </Slide>,
   <Slide>
     <Heading size={5} margin="0 0 8rem 0">
       Bundling 📦

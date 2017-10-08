@@ -22,12 +22,6 @@ const BuildOutput = ({ className = '' }) => (
       {'  '}3.44 kB{'       '}0{'  '}
       <G>[emitted]</G> main
     </div>
-    <div>
-      {'   '}[0] <B>./src/index.js</B> 412 bytes {0} <G>[built]</G>
-    </div>
-    <div>
-      {'   '}[1] <B>./src/math.js</B> 129 bytes {0} <G>[built]</G>
-    </div>
   </div>
 );
 

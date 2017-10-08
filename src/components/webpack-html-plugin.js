@@ -36,12 +36,12 @@ export const WebpackHtmlPlugin = () => (
           <Y>[big]</Y>
           {'  '}main
         </div>
-        <div>
+        {/* <div>
           <G>{'         '}main.e33ac9b7.js.map</G>
           {'    '}1.12 MB{'       '}0{'  '}
           <G>[emitted]</G>
           {'         '}main
-        </div>
+        </div> */}
         <div>
           <G>{'                   '}index.html</G>
           {'    '}1.58 kB{'          '}

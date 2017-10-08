@@ -175,9 +175,6 @@ export default [
       { loc: [22, 36] },
     ]}
   />,
-  <Slide>
-    <Image src={img.vueLoader} className="w-60" />
-  </Slide>,
   <Slide margin="0">
     <Heading size={4}>Plugins 🔌</Heading>
     <Text>
@@ -205,7 +202,6 @@ export default [
       { loc: [9, 10], title: 'Output to build' },
       { loc: [2, 3], title: 'HTML Webpack Plugin' },
       { loc: [51, 57], note: '✨ automatically inject scripts into template' },
-      { loc: [5, 6], note: '🐛 debugging' },
       { loc: [6, 7], note: '📄 Entry' },
       { loc: [7, 11], note: '📦 Output' },
       { loc: [11, 30], note: '🐡️ Loaders' },
@@ -216,10 +212,10 @@ export default [
     <Heading size={6}>Build with Loaders + HTML Plugin</Heading>
     <WebpackHtmlPlugin />
   </Slide>,
-  <Slide>
-    <Heading size={6} lineHeight={1.5}>
-      Build Output
-    </Heading>
-    <Image src={img.build} className="w-100" />
-  </Slide>,
+  // <Slide>
+  //   <Heading size={6} lineHeight={1.5}>
+  //     Build Output
+  //   </Heading>
+  //   <Image src={img.build} className="w-100" />
+  // </Slide>,
 ];

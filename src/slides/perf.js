@@ -8,7 +8,6 @@ import {
   Heading,
   CodePane,
   CodeSplitting,
-  TwoColumn,
   BuildComparision,
   Chrome,
   WebpackExtractCss,
@@ -16,9 +15,6 @@ import {
 import img from 'img';
 
 export default [
-  <Slide>
-    <Heading size={1}>Perf ⚡⏱️</Heading>
-  </Slide>,
   <Slide bgImage={img.bundle} />,
   <Slide>
     <div
@@ -31,7 +27,7 @@ export default [
         lineHeight={2}
         className="flex-none w-100 pb3 fw9"
       >
-        bundle.js
+        main.5c68c3b0.js
       </Text>
       <Text
         lineHeight={2}
@@ -81,10 +77,6 @@ export default [
   <Slide textColor="primary">
     <WebpackExtractCss />
   </Slide>,
-  <Slide margin="0">
-    <Heading size={5}>What's Really Inside the Bundle?</Heading>
-    <CodePane textSize="1.5rem" src="analyze" lang="js" />
-  </Slide>,
   <Slide>
     <Heading size={5}>Code Splitting ✂️</Heading>
     <CodeSplitting />
@@ -106,18 +98,18 @@ export default [
       { loc: [14, 15], note: 'name the split chunk' },
     ]}
   />,
-  <Slide>
-    <Heading size={5}>Async Components in Vue</Heading>
-    <TwoColumn>
-      <CodePane textSize="1.5rem" src="vue-async-component" lang="js" />
-      <CodePane
-        textSize="1.5rem"
-        src="vue-async-component-usage"
-        lang="html"
-        className="h-100"
-      />
-    </TwoColumn>
-  </Slide>,
+  // <Slide>
+  //   <Heading size={5}>Async Components in Vue</Heading>
+  //   <TwoColumn>
+  //     <CodePane textSize="1.5rem" src="vue-async-component" lang="js" />
+  //     <CodePane
+  //       textSize="1.5rem"
+  //       src="vue-async-component-usage"
+  //       lang="html"
+  //       className="h-100"
+  //     />
+  //   </TwoColumn>
+  // </Slide>,
   <CodeSlide
     transition={[]}
     lang="js"
@@ -149,12 +141,16 @@ export default [
   <Slide>
     <Chrome src={img.codeSplitting} />
   </Slide>,
-  <Slide>
-    <Heading size={3} textAlign="center">
-      Bundle Buddy
-    </Heading>
-    <CodePane textSize="1.5rem" src="bundle-buddy" lang="shell" />
+  <Slide margin="0">
+    <Heading size={5}>What's Really Inside the Bundle?</Heading>
+    <CodePane textSize="1.5rem" src="analyze" lang="js" />
   </Slide>,
+  // <Slide>
+  //   <Heading size={3} textAlign="center">
+  //     Bundle Buddy
+  //   </Heading>
+  //   <CodePane textSize="1.5rem" src="bundle-buddy" lang="shell" />
+  // </Slide>,
   <CodeSlide
     transition={[]}
     lang="js"

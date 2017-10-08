@@ -7,7 +7,7 @@ export const WebpackExtractCss = () => (
     textSize="1em"
     title="triangle-catalogue-webpack-example"
     output={[
-      <Command className="f4">npm run start</Command>,
+      <Command className="f4">npm run build</Command>,
       <div className="fw3 lh-copy f4 mt3">
         <div>
           Hash: <B>5c32f180b473f3dd7b51</B>
@@ -42,7 +42,7 @@ export const WebpackExtractCss = () => (
           <G>[emitted]</G>
           {'         '}main
         </div>
-        <div>
+        {/* <div>
           <G>{'         '}main.5c68c3b0.js.map</G>
           {'     '}923 kB{'       '}0{'  '}
           <G>[emitted]</G>
@@ -53,7 +53,7 @@ export const WebpackExtractCss = () => (
           {'   '}94 bytes{'       '}0{'  '}
           <G>[emitted]</G>
           {'         '}main
-        </div>
+        </div> */}
         <div>
           <G>{'                   '}index.html</G>
           {'    '}1.63 kB{'          '}

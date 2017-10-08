@@ -1,23 +1,23 @@
 import React from 'react';
 import { Slide, List, Link } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
+// import CodeSlide from 'spectacle-code-slide';
 
 import { Heading, ListItem, Text } from 'components';
 
 export default [
-  <CodeSlide
-    transition={[]}
-    lang="js"
-    textSize="0.65em"
-    style={{ lineHeight: 1.25 }}
-    code={require('../assets/everything.example')}
-    ranges={[
-      { loc: [0, 0], title: 'Review' },
-      { loc: [8, 14] },
-      { loc: [14, 43] },
-      { loc: [43, 61] },
-    ]}
-  />,
+  // <CodeSlide
+  //   transition={[]}
+  //   lang="js"
+  //   textSize="0.65em"
+  //   style={{ lineHeight: 1.25 }}
+  //   code={require('../assets/everything.example')}
+  //   ranges={[
+  //     { loc: [0, 0], title: 'Review' },
+  //     { loc: [8, 14] },
+  //     { loc: [14, 43] },
+  //     { loc: [43, 61] },
+  //   ]}
+  // />,
   <Slide margin="0">
     <Heading size={4} margin="0 0 4rem 0">
       <span className="strike">JavaScript</span> Webpack Fatigue
