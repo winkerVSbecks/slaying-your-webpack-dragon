@@ -85,7 +85,7 @@ export default [
         <Code>@import</Code> statement in stylesheets
       </ListItem>
       <ListItem>
-        Image <Code>url()</Code> in a stylesheet or HTML
+        Image <Code>url</Code> in a stylesheet or HTML
       </ListItem>
     </List>
   </Slide>,
@@ -95,13 +95,9 @@ export default [
     <Text>index.css</Text>
     <CodePane src="loader-css" lang="css" />
   </Slide>,
-  <Slide bgImage={img.babelFish}>
-    <Heading textAlign="center" size={1} margin="0">
-      Loaders
-    </Heading>
-    <Heading textAlign="center" size={5} margin="0">
-      Transform files into modules
-    </Heading>
+  <Slide>
+    <Heading size={4}>Loaders 🖨️</Heading>
+    <Text>Transform files into modules</Text>
   </Slide>,
   <CodeSlide
     transition={[]}
@@ -184,9 +180,6 @@ export default [
   <Slide>
     <Heading size={6} lineHeight={1.5}>
       Separating the Source Code from Our Distribution Code
-      {/*The "source" code is the code that we'll write and edit. The
-        "distribution" code is the minimized and optimized output of our build
-        process that will eventually be loaded in the browser*/}
     </Heading>
     <Image src={img.public} className="w-100" />
   </Slide>,
@@ -204,7 +197,7 @@ export default [
       { loc: [51, 57], note: '✨ automatically inject scripts into template' },
       { loc: [6, 7], note: '📄 Entry' },
       { loc: [7, 11], note: '📦 Output' },
-      { loc: [11, 30], note: '🐡️ Loaders' },
+      { loc: [11, 30], note: '🖨️ Loaders' },
       { loc: [51, 57], note: '🔌 Plugins' },
     ]}
   />,
