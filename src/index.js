@@ -15,3 +15,5 @@ if (module.hot) {
 }
 
 registerServiceWorker();
+
+// "homepage": "https://winkervsbecks.github.io/slaying-your-webpack-dragon"
