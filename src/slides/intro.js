@@ -42,15 +42,6 @@ export default [
     <CodePane src="all-the-css" lang="css" />
   </Slide>,
   <Slide>
-    <Heading size={5}>Exposure to Build Tools</Heading>
-    <List>
-      <ListItem>CSS Concactation</ListItem>
-      <ListItem>CSS Pre-processors</ListItem>
-      <ListItem>Livereload/Browsersync</ListItem>
-      <ListItem>Hacked grunt scripts</ListItem>
-    </List>
-  </Slide>,
-  <Slide>
     <Heading size={5} margin="0 0 8rem 0">
       Bundling 📦
     </Heading>
@@ -69,6 +60,15 @@ export default [
         </Text>
       </div>
     </TwoColumn>
+  </Slide>,
+  <Slide>
+    <Heading size={5}>Exposure to Build Tools</Heading>
+    <List>
+      <ListItem>CSS Concactation</ListItem>
+      <ListItem>CSS Pre-processors</ListItem>
+      <ListItem>Livereload/Browsersync</ListItem>
+      <ListItem>Hacked grunt scripts</ListItem>
+    </List>
   </Slide>,
   <Slide>
     <Heading size={5}>Task Runners</Heading>
