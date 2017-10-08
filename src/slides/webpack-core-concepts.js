@@ -63,7 +63,7 @@ export default [
       { loc: [6, 7], note: 'path.resolve: generate an absolute path' },
     ]}
   />,
-  <Slide textColor="primary">
+  <Slide textColor="primary" margin="0">
     <Heading size={4}>My First Webpack Build</Heading>
     <WebpackBasicBuild />
   </Slide>,
