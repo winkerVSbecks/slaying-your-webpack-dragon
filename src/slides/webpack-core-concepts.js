@@ -18,7 +18,7 @@ import {
 import img from 'img';
 
 export default [
-  <Slide>
+  <Slide margin="0">
     <div className="flex items-stretch">
       <div className="flex-auto mr3 ba b--moon-gray overflow-hidden bw1">
         <div className="bg-moon-gray fw8 dark-blue f3 pv2">src/index.js</div>
